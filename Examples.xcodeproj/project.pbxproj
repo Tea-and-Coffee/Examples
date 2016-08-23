@@ -126,6 +126,11 @@
 		D9A1FE0D1CE3C73100FB7902 /* halo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D9A1FE0A1CE3C73100FB7902 /* halo.mp4 */; };
 		D9A1FE0E1CE3C73100FB7902 /* haloGray.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D9A1FE0B1CE3C73100FB7902 /* haloGray.mp4 */; };
 		D9C347731CF4EEE100C91F0B /* Shapes21.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C347721CF4EEE100C91F0B /* Shapes21.swift */; };
+		F56B92971D6C590500F37CC2 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B92931D6C590500F37CC2 /* NSObjectExtensions.swift */; };
+		F56B92981D6C590500F37CC2 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B92941D6C590500F37CC2 /* UICollectionViewExtensions.swift */; };
+		F56B92991D6C590500F37CC2 /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B92951D6C590500F37CC2 /* UIStoryboardExtensions.swift */; };
+		F56B929A1D6C590500F37CC2 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B92961D6C590500F37CC2 /* UITableViewExtensions.swift */; };
+		F56B929C1D6C590D00F37CC2 /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B929B1D6C590D00F37CC2 /* ExamplesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -277,6 +282,11 @@
 		D9A1FE0A1CE3C73100FB7902 /* halo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = halo.mp4; sourceTree = "<group>"; };
 		D9A1FE0B1CE3C73100FB7902 /* haloGray.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = haloGray.mp4; sourceTree = "<group>"; };
 		D9C347721CF4EEE100C91F0B /* Shapes21.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes21.swift; sourceTree = "<group>"; };
+		F56B92931D6C590500F37CC2 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
+		F56B92941D6C590500F37CC2 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
+		F56B92951D6C590500F37CC2 /* UIStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensions.swift; sourceTree = "<group>"; };
+		F56B92961D6C590500F37CC2 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		F56B929B1D6C590D00F37CC2 /* ExamplesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,11 +323,13 @@
 			isa = PBXGroup;
 			children = (
 				1F4D28D41CE265EE00C02C6E /* AppDelegate.swift */,
+				F56B929B1D6C590D00F37CC2 /* ExamplesViewController.swift */,
 				1F4D28D61CE265EE00C02C6E /* ViewController.swift */,
 				D9A1FE091CE3C73100FB7902 /* C4Loop.aif */,
 				D9A1FE0A1CE3C73100FB7902 /* halo.mp4 */,
 				D9A1FE0B1CE3C73100FB7902 /* haloGray.mp4 */,
 				1F4D28F31CE2669600C02C6E /* Examples */,
+				F56B92921D6C590500F37CC2 /* Extensions */,
 				1F4D28D81CE265EE00C02C6E /* Main.storyboard */,
 				1F4D28DB1CE265EE00C02C6E /* Assets.xcassets */,
 				1F4D28DD1CE265EE00C02C6E /* LaunchScreen.storyboard */,
@@ -477,6 +489,17 @@
 				90454850A056E880A6B2E14F /* Pods-Examples.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F56B92921D6C590500F37CC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F56B92931D6C590500F37CC2 /* NSObjectExtensions.swift */,
+				F56B92941D6C590500F37CC2 /* UICollectionViewExtensions.swift */,
+				F56B92951D6C590500F37CC2 /* UIStoryboardExtensions.swift */,
+				F56B92961D6C590500F37CC2 /* UITableViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -669,6 +692,7 @@
 				D97A83C41CEA913C00330D6E /* Views17.swift in Sources */,
 				1F4D29BB1CE266A700C02C6E /* Interaction07.swift in Sources */,
 				1F4D29A01CE266A700C02C6E /* Colors08.swift in Sources */,
+				F56B92981D6C590500F37CC2 /* UICollectionViewExtensions.swift in Sources */,
 				1F4D29F71CE266A700C02C6E /* Shapes14.swift in Sources */,
 				1F4D29DC1CE266A700C02C6E /* Math05.swift in Sources */,
 				1F4D29A41CE266A700C02C6E /* Fonts04.swift in Sources */,
@@ -682,6 +706,8 @@
 				1F4D29E41CE266A700C02C6E /* Math13.swift in Sources */,
 				1F4D2A2D1CE3378700C02C6E /* Views12.swift in Sources */,
 				D97A83C01CEA886000330D6E /* Views15.swift in Sources */,
+				F56B92991D6C590500F37CC2 /* UIStoryboardExtensions.swift in Sources */,
+				F56B929C1D6C590D00F37CC2 /* ExamplesViewController.swift in Sources */,
 				1F4D29C01CE266A700C02C6E /* Interaction08.swift in Sources */,
 				1F4D298A1CE266A700C02C6E /* Advanced02.swift in Sources */,
 				D92EE1261CF51043002A3813 /* Gradient03.swift in Sources */,
@@ -695,6 +721,7 @@
 				1F4D29891CE266A700C02C6E /* Interaction03.swift in Sources */,
 				1F4D29A71CE266A700C02C6E /* Filters02.swift in Sources */,
 				1F4D299E1CE266A700C02C6E /* Colors06.swift in Sources */,
+				F56B92971D6C590500F37CC2 /* NSObjectExtensions.swift in Sources */,
 				1F4D2A151CE266A700C02C6E /* Views13.swift in Sources */,
 				1F4D29A51CE266A700C02C6E /* Fonts05.swift in Sources */,
 				1F4D29A91CE266A700C02C6E /* Filters04.swift in Sources */,
@@ -719,6 +746,7 @@
 				D92EE1241CF50F40002A3813 /* Gradient02.swift in Sources */,
 				1F4D29DB1CE266A700C02C6E /* Math04.swift in Sources */,
 				1F4D29A11CE266A700C02C6E /* Fonts01.swift in Sources */,
+				F56B929A1D6C590500F37CC2 /* UITableViewExtensions.swift in Sources */,
 				1F4D29F41CE266A700C02C6E /* Shapes11.swift in Sources */,
 				1F4D2A051CE266A700C02C6E /* Views05.swift in Sources */,
 				1F4D29E01CE266A700C02C6E /* Math09.swift in Sources */,

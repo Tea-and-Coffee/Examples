@@ -21,6 +21,7 @@ public extension UICollectionView {
     
     public func registerClass<T: UICollectionReusableView>(type: T.Type, kind: String) {
         registerClass(T.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: type.className)
+        
     }
     
     public func registerNib<T: UICollectionReusableView>(type: T.Type, kind: String) {

@@ -18,5 +18,6 @@ public extension UIStoryboard {
     public func instantiate<T: UIViewController where T: NSObject>(_: T.Type, storyboard: String) -> T {
         let storyboard = UIStoryboard(name: storyboard, bundle: nil)
         return storyboard.instantiateViewControllerWithIdentifier(T.className) as! T
+        
     }
 }
