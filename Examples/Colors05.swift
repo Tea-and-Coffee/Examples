@@ -28,9 +28,9 @@ class Colors05: CanvasController {
         setupShapes()
         setupLabels()
 
-        red.fillColor  = Color(hue: 0.0, saturation: 1.0, brightness: 1.0, alpha: 1.0)
-        green.fillColor  = Color(hue: 0.33, saturation: 1.0, brightness: 1.0, alpha: 1.0)
-        blue.fillColor  = Color(hue: 0.66, saturation: 1.0, brightness: 1.0, alpha: 1.0)
+        red.fillColor  = Color(red: 0.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        green.fillColor  = Color(red: 0.33, green: 1.0, blue: 1.0, alpha: 1.0)
+        blue.fillColor  = Color(red: 0.66, green: 1.0, blue: 1.0, alpha: 1.0)
     }
 
     func setupShapes() {
