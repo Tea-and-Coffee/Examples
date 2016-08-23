@@ -38,7 +38,6 @@ extension ExamplesViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(UITableViewCell.self, indexPath: indexPath)
         cell.textLabel?.text = "aaa"
         return cell
-        
     }
 }
 
