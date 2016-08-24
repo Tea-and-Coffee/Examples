@@ -31,12 +31,13 @@ extension ExamplesViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return Examples.examples.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let example = Examples.examples[indexPath.row]
         let cell = tableView.dequeueReusableCell(UITableViewCell.self, indexPath: indexPath)
-        cell.textLabel?.text = "aaa"
+        cell.textLabel?.text = example.className
         return cell
     }
 }

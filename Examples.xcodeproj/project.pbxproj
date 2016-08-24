@@ -126,6 +126,7 @@
 		D9A1FE0D1CE3C73100FB7902 /* halo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D9A1FE0A1CE3C73100FB7902 /* halo.mp4 */; };
 		D9A1FE0E1CE3C73100FB7902 /* haloGray.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D9A1FE0B1CE3C73100FB7902 /* haloGray.mp4 */; };
 		D9C347731CF4EEE100C91F0B /* Shapes21.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C347721CF4EEE100C91F0B /* Shapes21.swift */; };
+		F53EBFC31D6D3D8900117A37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EBFC21D6D3D8900117A37 /* Example.swift */; };
 		F56B92971D6C590500F37CC2 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B92931D6C590500F37CC2 /* NSObjectExtensions.swift */; };
 		F56B92981D6C590500F37CC2 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B92941D6C590500F37CC2 /* UICollectionViewExtensions.swift */; };
 		F56B92991D6C590500F37CC2 /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B92951D6C590500F37CC2 /* UIStoryboardExtensions.swift */; };
@@ -282,6 +283,7 @@
 		D9A1FE0A1CE3C73100FB7902 /* halo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = halo.mp4; sourceTree = "<group>"; };
 		D9A1FE0B1CE3C73100FB7902 /* haloGray.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = haloGray.mp4; sourceTree = "<group>"; };
 		D9C347721CF4EEE100C91F0B /* Shapes21.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes21.swift; sourceTree = "<group>"; };
+		F53EBFC21D6D3D8900117A37 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		F56B92931D6C590500F37CC2 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
 		F56B92941D6C590500F37CC2 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		F56B92951D6C590500F37CC2 /* UIStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensions.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				1F4D28D41CE265EE00C02C6E /* AppDelegate.swift */,
 				F56B929B1D6C590D00F37CC2 /* ExamplesViewController.swift */,
 				1F4D28D61CE265EE00C02C6E /* ViewController.swift */,
+				F53EBFC21D6D3D8900117A37 /* Example.swift */,
 				D9A1FE091CE3C73100FB7902 /* C4Loop.aif */,
 				D9A1FE0A1CE3C73100FB7902 /* halo.mp4 */,
 				D9A1FE0B1CE3C73100FB7902 /* haloGray.mp4 */,
@@ -682,6 +685,7 @@
 				1F4D29F81CE266A700C02C6E /* Shapes15.swift in Sources */,
 				1F5482D61CE9286C009E841D /* Shapes10.swift in Sources */,
 				D92EE1281CF51138002A3813 /* Gradient04.swift in Sources */,
+				F53EBFC31D6D3D8900117A37 /* Example.swift in Sources */,
 				1F5482D41CE91F53009E841D /* Shapes16.swift in Sources */,
 				1F4D28D71CE265EE00C02C6E /* ViewController.swift in Sources */,
 				1F4D2A0A1CE266A700C02C6E /* Views08.swift in Sources */,
