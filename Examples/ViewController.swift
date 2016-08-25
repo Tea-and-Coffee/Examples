@@ -21,19 +21,19 @@ import UIKit
 import C4
 
 class ViewController: CanvasController {
+    var example: Example?
     let s = ScreenRecorder()
-
+    
     override func setup() {
-        let example = Gradient04()
-        self.addChildViewController(example)
-        canvas.add(example.canvas)
-
+        self.addChildViewController(example!.controller)
+        canvas.add(example!.controller.canvas)
+        
         s.recordingEndedAction = {
             self.s.showPreviewInController(self)
         }
-
-//        wait(1.0) {
-//            self.s.start(15.0)
-//        }
+        
+        // wait(1.0) {
+        //     self.s.start(15.0)
+        // }
     }
 }

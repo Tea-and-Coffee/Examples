@@ -35,9 +35,9 @@ extension ExamplesViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let example = Examples.examples[indexPath.row]
         let cell = tableView.dequeueReusableCell(UITableViewCell.self, indexPath: indexPath)
-        cell.textLabel?.text = example.className
+        var example = Examples.examples[indexPath.row]
+        cell.textLabel?.text = example.controllerName
         return cell
     }
 }
@@ -46,6 +46,7 @@ extension ExamplesViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let vc = UIStoryboard().instantiate(ViewController.self, storyboard: "Main")
+        vc.example = Examples.examples[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
 }

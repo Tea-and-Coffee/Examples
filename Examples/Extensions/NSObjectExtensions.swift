@@ -10,6 +10,14 @@ import UIKit
 
 public extension NSObject {
     
+    public class var identifier: String {
+        return NSStringFromClass(self)
+    }
+    
+    public var identifier: String {
+        return self.dynamicType.identifier
+    }
+    
     public class var className: String {
         return NSStringFromClass(self).componentsSeparatedByString(".").last!
     }
