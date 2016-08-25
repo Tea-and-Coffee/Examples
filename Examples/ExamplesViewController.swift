@@ -19,6 +19,14 @@ class ExamplesViewController: UIViewController {
         view.addSubview(tableView)
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let indexPathForSelectedRow = tableView.indexPathForSelectedRow {
+            tableView.deselectRowAtIndexPath(indexPathForSelectedRow, animated: animated)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
