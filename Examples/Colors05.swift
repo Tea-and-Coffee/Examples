@@ -28,6 +28,7 @@ class Colors05: CanvasController {
         setupShapes()
         setupLabels()
 
+        // TODO: Temporary countermeasure
         red.fillColor  = Color(red: 0.0, green: 1.0, blue: 1.0, alpha: 1.0)
         green.fillColor  = Color(red: 0.33, green: 1.0, blue: 1.0, alpha: 1.0)
         blue.fillColor  = Color(red: 0.66, green: 1.0, blue: 1.0, alpha: 1.0)

@@ -80,6 +80,7 @@ class Colors01: CanvasController {
 
     func hsbColors(frame: Rect) {
         let shape = generateRect(frame, text: "HSB")
+        // TODO: Temporary countermeasure
         shape.fillColor = Color(red: 0.25, green: 0.75, blue: 0.5, alpha: 1.0)
         shape.strokeColor = Color(red: 0.5, green: 1.0, blue: 1.0, alpha: 1.0)
     }
