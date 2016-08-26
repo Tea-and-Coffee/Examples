@@ -31,9 +31,8 @@ class Images04: CanvasController {
             //color each pixel in that row
             for _ in 0..<Int(canvas.width) {
                 //create a pixel from a random color in our set
-                // TODO: Temporary countermeasure
                 let color = colors[random(below: 4)]
-                let pixel = Pixel(Int(color.red), Int(color.green), Int(color.blue), UInt8(color.alpha))
+                let pixel = Pixel(Int(color.red * 255.0), Int(color.green * 255.0), Int(color.blue * 255.0), UInt8(color.alpha * 255.0))
                 rawData.append(pixel)
             }
         }
