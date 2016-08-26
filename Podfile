@@ -6,6 +6,6 @@ target 'Examples' do
   use_frameworks!
 
   # Pods for Examples
-  pod 'C4', '~>1.1'
+  pod 'C4', :git => 'https://github.com/C4Labs/C4iOS.git'
 
 end

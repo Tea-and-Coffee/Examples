@@ -2,11 +2,20 @@ PODS:
   - C4 (1.1.0)
 
 DEPENDENCIES:
-  - C4 (~> 1.1)
+  - C4 (from `https://github.com/C4Labs/C4iOS.git`)
+
+EXTERNAL SOURCES:
+  C4:
+    :git: https://github.com/C4Labs/C4iOS.git
+
+CHECKOUT OPTIONS:
+  C4:
+    :commit: 5f7f1632505064d38ade3a2c58ce6fc064c4b2fb
+    :git: https://github.com/C4Labs/C4iOS.git
 
 SPEC CHECKSUMS:
-  C4: 376f0283d94033b954972d963bf1acdf13eb2a7d
+  C4: 64cc63ea4e12ef2fcc4c7c9b7b0cb383d85fd5c2
 
-PODFILE CHECKSUM: eb39bccda82af151f8bad6d2f964d65e188a4979
+PODFILE CHECKSUM: 017df35955552963c4b24967d9e8a0402b4da78b
 
 COCOAPODS: 1.0.1
