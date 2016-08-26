@@ -28,7 +28,8 @@ class Movies01: CanvasController {
         canvas.add(movie)
 
         canvas.addTapGestureRecognizer { locations, center, state in
-            movie.playing ? movie.pause() : movie.play()
+            // TODO: Temporary countermeasure
+            // movie.playing ? movie.pause() : movie.play()
         }
     }
 }
