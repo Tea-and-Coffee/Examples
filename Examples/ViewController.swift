@@ -25,6 +25,9 @@ class ViewController: CanvasController {
     let s = ScreenRecorder()
     
     override func setup() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
         self.title = example?.controllerName
         
         self.addChildViewController(example!.controller)
