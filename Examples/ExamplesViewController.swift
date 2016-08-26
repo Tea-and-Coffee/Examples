@@ -11,20 +11,23 @@ import UIKit
 class ExamplesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-        view.addSubview(tableView)
-    }
-    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        
+        tableView.flashScrollIndicators()
         
         if let indexPathForSelectedRow = tableView.indexPathForSelectedRow {
             tableView.deselectRowAtIndexPath(indexPathForSelectedRow, animated: animated)
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.decelerationRate = UIScrollViewDecelerationRateFast
+        tableView.dataSource = self
+        tableView.delegate = self
+        view.addSubview(tableView)
     }
     
     override func didReceiveMemoryWarning() {
